@@ -1,88 +1,184 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
-    <title>ME/CFS Selbsthilfegruppe Oberösterreich</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f7f7f7;
-            color: #333;
-        }
-        header {
-            background: #5b7ea6;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2em;
-        }
-        nav {
-            background: #fff;
-            padding: 10px;
-            display: flex;
-            justify-content: center;
-            border-bottom: 1px solid #ccc;
-        }
-        nav a {
-            margin: 0 10px;
-            text-decoration: none;
-            color: #5b7ea6;
-            font-weight: bold;
-        }
-        main {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 20px;
-            background: #fff;
-            border: 1px solid #ddd;
-        }
-        main img {
-            display: block;
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 20px;
-        }
-        footer {
-            text-align: center;
-            font-size: 0.9em;
-            color: #666;
-            margin: 20px 0;
-        }
-        .kontakt {
-            margin-top: 20px;
-            padding: 20px;
-            background: #eef;
-            border-left: 4px solid #5b7ea6;
-        }
-        .kontakt p {
-            margin: 5px 0;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+  <link rel="shortcut icon" href="favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Selbsthilfegruppe ME/CFS OÖ" />
+  <link rel="manifest" href="favicon/site.webmanifest" />
+  <title>Selbsthilfegruppe ME/CFS Oberösterreich</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fafafa;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #f8a600; /* Orange-Farbton */
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #fff;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      padding: 15px 20px;
+      text-decoration: none;
+      color: #f8a600;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background: #f8a600;
+      color: #fff;
+    }
+    section {
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      color: #f8a600;
+      margin-top: 0;
+    }
+    .hero {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .hero img {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      margin-bottom: 20px;
+    }
+    .anmeldung {
+      flex: 1;
+      min-width: 250px;
+      background: #fff;
+      border: 1px solid #eee;
+      padding: 20px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+      border-radius: 4px;
+      text-align: left;
+    }
+    .kooperation-liste {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .kooperation {
+      flex: 1;
+      min-width: 250px;
+      background: #fff;
+      border: 1px solid #eee;
+      padding: 20px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+      border-radius: 4px;
+      text-align: left;
+    }
+    .kooperation h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      color: #f8a600;
+      font-size: 1.2rem;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #666;
+      margin: 40px 0;
+    }
+    section[id] {
+      scroll-margin-top: 80px; /* Abstand für sticky Navbar */
+    }
+  </style>
 </head>
+
 <body>
-    <header>
-        <h1>ME/CFS Selbsthilfegruppe Oberösterreich</h1>
-    </header>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Impressum</a>
-    </nav>
-    <main>
-        <img src="platzhalter-bild.jpg" alt="Stimmungsbild – Platzhalter" />
-        <h2>Willkommen,</h2>
-        <p>Wir sind eine Selbsthilfegruppe für Menschen mit ME/CFS in Oberösterreich. Unser Ziel ist es, Betroffene und Angehörige zusammenzubringen, um Erfahrungen auszutauschen, sich gegenseitig zu unterstützen und gemeinsam Wege zur besseren Bewältigung des Alltags zu finden. Wir engagieren uns gemeinsam für bessere Versorungsstrukturen in Oberösterreich.</p>
-        
-        <div class="kontakt">
-            <p>Informationen &amp; Fragen: <a href="mailto:info@ooe-mecfs.at">info@ooe-mecfs.at</a></p>
-        </div>
-    </main>
-    <footer>
-        &copy; 2024 ME/CFS Selbsthilfegruppe Oberösterreich
-    </footer>
+  <header id="start">
+    <h1>Selbsthilfegruppe ME/CFS Oberösterreich</h1>
+  </header>
+
+  <nav>
+    <a href="#start">Start</a>
+    <a href="#anmeldung">Anmeldung</a>
+    <a href="#mecfs">ME/CFS</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+
+  <section class="hero">
+    <img src="stimmungsbild_optimized.jpg" alt="Bild von im Kreis zusammengestreckten Fäusten." />
+    <p>
+      Wir sind eine Selbsthilfegruppe aus Oberösterreich für Menschen mit ME/CFS. Wir möchten
+      Betroffene und Angehörige stärken, informieren und vernetzen. Bei uns findest du Austausch,
+      Verständnis und Aktuelles rund um ME/CFS und Long COVID.
+    </p>
+    <p></p>
+  </section>
+
+  <section id="anmeldung">
+    <div class="anmeldung">
+      <h2>Anmeldung</h2>
+      <p>
+        Der Austausch findet vor allem virtuell in einer WhatsApp-Gruppe statt. Um Zugang zur Gruppe zu erhalten, schreibe bitte ein kurzes E-Mail mit deiner aktuellen Situation an 
+        <a href="mailto:anmeldung@ooe-mecfs.at">anmeldung@ooe-mecfs.at</a>. Wir schicken dir dann einen Link für den Beitritt.
+      </p>
+      <p>
+        Für Betroffene finden Treffen auch im echten Leben statt. Termin und Ort werden über die WhatsApp-Gruppe kommuniziert.
+      </p>
+    </div>
+  </section>
+
+  <section id="mecfs">
+    <h2>ME/CFS</h2>
+    <p>
+      ME/CFS (Myalgische Enzephalomyelitis/Chronisches Fatigue-Syndrom) ist eine schwere, chronische Multisystemerkrankung, die oft nach Infektionen auftritt und zu massiven Einschränkungen im Alltag führen kann. Typisch dafür ist die sogenannte Post Exertional Malaise (PEM): Schon geringe körperliche oder mentale Anstrengungen können Stunden oder sogar Tage später zu einer starken Verschlechterung führen. Viele Betroffene sind dadurch arbeitsunfähig, teils pflegebedürftig und häufig nicht adäquat versorgt. Aktuell gibt es keine ursächliche Behandlung, doch das Energiemanagementkonzept „Pacing“ kann helfen, Verschlechterungen zu vermeiden. Weiterführende Informationen, z.B. zu Symptomen, Verlauf und Unterstützungsmöglichkeiten, finden Sie auf der Seite der 
+      <a href="https://mecfs.at/ueber-me-cfs/" target="_blank">Österreichischen Gesellschaft für ME/CFS</a>.
+    </p>
+  </section>
+
+  <section id="kooperationen">
+    <h2>Kooperationspartner</h2>
+    <div class="kooperation-liste">
+      <div class="kooperation">
+        <a href="https://mecfs.at/" target="_blank">
+          <img src="mecfs_logo.png" alt="Stimmungsbild" style="width:400px;" />
+        </a><br/>
+        In Kooperation mit der Österreichischen Gesellschaft ME/CFS arbeiten wir daran, die Lebensqualität Betroffener zu verbessern und uns für eine angemessene Versorgung einzusetzen.
+      </div>
+    </div>
+  </section>
+
+  <section id="kontakt">
+    <h2>Kontakt</h2>
+    Selbsthilfegruppe ME/CFS Oberösterreich
+    <p>
+      <strong>Infos &amp; Fragen:</strong> 
+      <a href="mailto:info@ooe-mecfs.at">info@ooe-mecfs.at</a>
+    </p>
+  </section>
+
+  <footer>
+    &copy; 2025 ME/CFS Selbsthilfegruppe Oberösterreich
+  </footer>
 </body>
 </html>
